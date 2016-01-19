@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>skillsUpContact</title>
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" type="text/css" href="/resources/assets/css/vendor/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/resources/assets/css/style.css"/>
+</head>
+<body ng-app="firstApp">
+	<div class="container" ng-controller="contactController">
+
+		First Name: <input type="text" ng-model="name"><br>
+		Phone :     <input type="text" ng-model="phone"><br>
+		<button ng-click="addContact()" type="button" class="btn btn-outline-inverse btn-lg">
+			Add
+		</button>
+		<br>
+		<br>
+		<table border="1">
+			<tr>
+				<th>Name</th>
+				<th>Phone</th>
+			</tr>
+			<tr ng-repeat="x in contacts">
+				<td>{{ x.name }}</td>
+				<td>{{ x.phone }}</td>
+			</tr>
+		</table>
+	</div>
+
+	<script src="/resources/assets/js/vendor/jquery.min.js"></script>
+ 	<script src="/resources/assets/js/vendor/angular.min.js"></script>
+	<script src="/resources/assets/js/vendor/bootstrap.min.js"></script>
+	<script src="/resources/assets/js/firstApp.js"></script>
+	<script src="/resources/assets/js/firstController.js"></script>
+</body>
+</html>
