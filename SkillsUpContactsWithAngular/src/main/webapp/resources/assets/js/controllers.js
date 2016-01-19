@@ -3,12 +3,15 @@ var appControllers = angular.module('appControllers', []);
 
 appControllers.controller("contactController", ['$scope', '$http', function ($scope, $http) {
 
+
     $scope.refresh  = function () {
         $http.get("contacts")
             .then(function (response) {
                 $scope.contacts = response.data;
             });
     };
+
+    $scope.refresh();
 
     $scope.addContact = function () {
         $http.post('/contacts',{"name":$scope.name, "phone":   $scope.phone }).
