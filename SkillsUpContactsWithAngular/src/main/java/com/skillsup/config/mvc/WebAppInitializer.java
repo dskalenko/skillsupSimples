@@ -1,13 +1,8 @@
 package com.skillsup.config.mvc;
 
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
 import com.skillsup.config.SpringConfig;
 import com.skillsup.config.mvc.servlet.ServletContextConfig;
-
-import java.util.List;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {

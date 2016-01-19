@@ -11,7 +11,6 @@
 	<properties>
 		<spring.version>4.2.4.RELEASE</spring.version>
 		<hibernate.version>4.3.6.Final</hibernate.version>
-		<jackson-version>2.4.4</jackson-version>
 		<dbh2.version>1.4.187</dbh2.version>
 		<hsqldb.version>2.3.2</hsqldb.version>
 	</properties>

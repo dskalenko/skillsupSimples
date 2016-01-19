@@ -9,6 +9,7 @@ appControllers.controller("contactController", ['$scope', '$http', function ($sc
                 $scope.contacts = response.data;
             });
     };
+
     $scope.addContact = function () {
         $http.post('/contacts',{"name":$scope.name, "phone":   $scope.phone }).
             success(function (data, status, headers, config) {
